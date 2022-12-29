@@ -26,6 +26,7 @@ public class guessTheNumber {
             // if the guessed number is correct
             if (userNumber == mynum) {
                 System.out.println("YEHHH!!! CORRECT NUMBER!!!");
+                break;
             }
 
             // if the guessed number is larger than THE number
@@ -43,9 +44,10 @@ public class guessTheNumber {
                 System.out.println("WRONG INPUT!!!!");
             }
 
-        }while(userNumber >= 0 || userNumber <= 100);
+        }while(true);
 
         // printing the The number that needed to be guessed
         System.out.println("My Number was: " + mynum);
+        System.out.println("\n");
     }
 }
